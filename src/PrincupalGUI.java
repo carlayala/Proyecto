@@ -215,6 +215,7 @@ public class PrincupalGUI {
 		textAreaAlimentacion.setText("Algunas recomendaciones de alimentación son:\r\n");
 		textAreaAlimentacion.setFont(new Font("Courier New", Font.PLAIN, 12));
 		textAreaAlimentacion.setBounds(32, 180, 692, 134);
+		textAreaAlimentacion.setLineWrap(true);
 		panelAlimentacion.add(textAreaAlimentacion);
 		
 		btnCalcularImc = new JButton("Calcular IMC y recomendaciones");
@@ -237,12 +238,12 @@ public class PrincupalGUI {
 		frame.getContentPane().add(panelCondicionFisica);
 		
 		JLabel lblHorasEjercicio = new JLabel("\u00BF¿Cuántas horas se ejercita al día?");
-		lblHorasEjercicio.setBounds(12, 32, 169, 16);
+		lblHorasEjercicio.setBounds(12, 32, 189, 16);
 		panelCondicionFisica.add(lblHorasEjercicio);
 		
 		txtHorasejercicioDia = new JTextField();
 		txtHorasejercicioDia.setColumns(10);
-		txtHorasejercicioDia.setBounds(193, 29, 116, 22);
+		txtHorasejercicioDia.setBounds(240, 29, 116, 22);
 		panelCondicionFisica.add(txtHorasejercicioDia);
 		
 		JLabel lblVecesEjercicioSemana = new JLabel("\u00BF¿Cuántas veces a la semana se ejercita?");
@@ -251,7 +252,7 @@ public class PrincupalGUI {
 		
 		txtVecesEjercicioSemana = new JTextField();
 		txtVecesEjercicioSemana.setColumns(10);
-		txtVecesEjercicioSemana.setBounds(232, 61, 116, 22);
+		txtVecesEjercicioSemana.setBounds(240, 61, 116, 22);
 		panelCondicionFisica.add(txtVecesEjercicioSemana);
 		
 		textAreaCondicionFisica = new JTextArea();
